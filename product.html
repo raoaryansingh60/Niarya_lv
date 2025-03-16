@@ -3,35 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Products - Niarya</title>
+    <title>Luxury Watches - Niarya</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Our Luxury Collection</h1>
-        <a href="index.html">Go Back to Home</a>
-    </header>
 
-    <main>
-        <div class="product">
-            <img src="images/shirt1.jpg" alt="Luxury Shirt">
-            <h2>Luxury Shirt</h2>
-            <p>High-quality luxury shirt with premium fabric.</p>
-            <p><strong>Price: ₹1999</strong></p>
-            <button>Add to Cart</button>
-        </div>
+<header>
+    <h1>Our Luxury Collection</h1>
+    <a href="index.html">Go Back to Home</a>
+</header>
 
-        <div class="product">
-            <img src="images/shoes1.jpg" alt="Luxury Shoes">
-            <h2>Luxury Shoes</h2>
-            <p>Comfortable and stylish leather shoes.</p>
-            <p><strong>Price: ₹2999</strong></p>
-            <button>Add to Cart</button>
-        </div>
-    </main>
+<main>
+    <div class="product">
+        <img src="images/watch1.jpg" alt="Luxury Watch 1">
+        <h2>IWC Pilot’s Watch Chronograph</h2>
+        <p>Premium Swiss-made chronograph watch with a sleek green dial.</p>
+        <p><strong>Price: ₹90,000</strong></p>
+        <button onclick="addToCart('IWC Pilot’s Watch', 90000)">Add to Cart</button>
+        <a href="watch1-details.html"><button>More About Product</button></a>
+    </div>
 
-    <footer>
-        <p>&copy; 2025 Niarya. All rights reserved.</p>
-    </footer>
+    <div class="product">
+        <img src="images/watch2.jpg" alt="Luxury Watch 2">
+        <h2>IWC Schaffhausen Chronograph</h2>
+        <p>Elegant design with a transparent case back showing Swiss movement.</p>
+        <p><strong>Price: ₹1,10,000</strong></p>
+        <button onclick="addToCart('IWC Schaffhausen Chronograph', 110000)">Add to Cart</button>
+        <a href="watch2-details.html"><button>More About Product</button></a>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2025 Niarya. All rights reserved.</p>
+</footer>
+
+<script>
+    function addToCart(productName, price) {
+        alert(productName + " added to cart for ₹" + price);
+        // Cart system implementation can be added later
+    }
+</script>
+
 </body>
-          </html>
+</html>
