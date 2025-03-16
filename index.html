@@ -3,24 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Niarya - Luxury Store</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Niarya LV - Luxury Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+        }
+        h1 {
+            margin-top: 20px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        .product {
+            border: 1px solid white;
+            padding: 15px;
+            margin: 20px;
+            display: inline-block;
+            background-color: #333;
+            border-radius: 8px;
+        }
+        .product img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 5px;
+        }
+        .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #FFD700;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Niarya</h1>
-        <p>Exclusive Luxury Collection</p>
-    </header>
 
-    <main>
-        <p>Explore our latest luxury products below.</p>
-        <a href="products.html" style="display: block; margin-top: 10px; font-weight: bold; color: blue;">
-            View Products
-        </a>
-    </main>
+    <h1>Welcome to Niarya LV</h1>
+    <p>Luxury Products with Style</p>
 
-    <footer>
-        <p>&copy; 2025 Niarya. All rights reserved.</p>
-    </footer>
+    <div class="container">
+        <div class="product">
+            <h2>Product 1</h2>
+            <img src="images/Screenshot_20250316_1.jpg" alt="Product 1">
+            <p>Exclusive luxury product available now.</p>
+            <p class="price">₹1,00,000</p>
+        </div>
+
+        <div class="product">
+            <h2>Product 2</h2>
+            <img src="images/Screenshot_20250316_2.jpg" alt="Product 2">
+            <p>Limited edition product, grab yours now!</p>
+            <p class="price">₹1,00,000</p>
+        </div>
+    </div>
+
 </body>
 </html>
